@@ -12,7 +12,10 @@ public class MadLib{
   String verb3;
 
   public void getWords(){
+    //scanner
     Scanner reader = new Scanner(System.in);
+
+    //get words from user
     System.out.println("Adjective: ");
     adj1 = reader.nextLine();
     System.out.println("Adjective: ");
@@ -36,10 +39,12 @@ public class MadLib{
   }
 
   public void printMadLib(){
+    //print madlib
     System.out.println("Did you ever " + verb1 + " the " + noun1 + " of Darth Plagueis the " + adj1 + "? I thought not. It is not a " + noun2 + " the Jedi would tell you. It is a " + noun3 + " legend. Darth Plagueis was a " + adj2 + " Lord of the Sith, so " + adj3 +" and so wise he could " + verb2 + " the Force to influence the midichlorians to " + verb3 + " life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying.");
   }
 
   public void run(){
+    // run program
     getWords();
     printMadLib();
   }
